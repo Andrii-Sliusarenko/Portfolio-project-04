@@ -6,6 +6,8 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
+import axios from 'axios';
+
 import './js/about-me';
 import './js/projects';
 import './js/faq';
