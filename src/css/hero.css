@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  background: linear-gradient(
+    270deg,
+    #1c1d20 49.68%,
+    #69292d 67.73%,
+    #ed3b44 100%
+  );
+
+  z-index: 0;
+  padding-top: 281px;
+  padding-bottom: 32px;
+}
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: -57px;
+  width: 83%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  z-index: -1;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.background-effect {
+  margin-left: -5px;
+  width: 57px;
+  backdrop-filter: blur(100px);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.2) 0%,
+    rgba(0, 0, 0, 0.1) 16.66%,
+    rgba(15, 15, 15, 0.2) 16.67%,
+    rgba(0, 0, 0, 0.2) 35%,
+    rgba(100, 100, 100, 0) 100%
+  );
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.background-effect.in-view {
+  opacity: 1;
+}
+.hero-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 212px;
+}
+
+.hero-title {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+
+.hero-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.hero-social-link {
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  border-radius: 60px;
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-social-link:hover {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.hero-social-link.hero-email-link {
+  width: 178px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 300px;
+  }
+
+  .hero-background {
+    width: 76%;
+  }
+
+  .hero-wrap {
+    gap: 187px;
+  }
+
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .hero-list {
+    gap: 8px;
+  }
+
+  .hero-social-link {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .hero-social-link.hero-email-link{
+    width: 223px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-background {
+    width: 50%;
+  }
+
+  .hero-wrap {
+    gap: 243px;
+  }
+
+  .hero-title {
+    margin: 0 auto;
+  }
+}

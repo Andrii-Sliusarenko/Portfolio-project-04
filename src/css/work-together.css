@@ -19,3 +19,212 @@
   background-color: #41d1ff;
   transition: 200ms ease;
 }
+
+/* +++++++ my +++++++ */
+
+.work-t-allingment {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-t-img {
+  border-radius: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.work-t-h-two {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+.work-t-text-insert {
+  color: #ed3b44;
+}
+.work-t-form {
+  max-width: 100%;
+  margin-top: 63px;
+  margin-bottom: 32px;
+}
+.work-t-input-email-container {
+  max-width: 100%;
+  margin-bottom: 16px;
+  height: 44px;
+}
+.work-t-input-email {
+  width: 100%;
+  height: 44px;
+  background-color: #1c1d20;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px rgba(250, 250, 250, 0.2);
+  padding: 0;
+}
+.work-t-input-textarea-container {
+  max-width: 100%;
+  height: 44px;
+}
+.work-t-input-textarea {
+  width: 100%;
+  height: 44px;
+  background-color: #1c1d20;
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px rgba(250, 250, 250, 0.2);
+  padding-top: 15px;
+}
+.work-t-btn {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ed3b44;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  padding: 0;
+  margin-bottom: 64px;
+}
+.work-t-contacts {
+  display: flex;
+  gap: 4px;
+}
+.work-t-list-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  font-style: normal;
+}
+@media screen and (min-width: 768px) {
+  .work-t-allingment {
+    width: 500px;
+  }
+  .work-t-img {
+    border-radius: 24px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    margin-bottom: 7px;
+  }
+  .work-t-h-two {
+    font-size: 64px;
+  }
+  .work-t-input-email-container {
+    margin: 0;
+  }
+  .work-t-form {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+  }
+  .work-t-form-allingment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .work-t-input-email {
+    width: 245px;
+  }
+  .work-t-input-textarea {
+    width: 245px;
+  }
+  .work-t-btn {
+    margin: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .work-t-contacts {
+    gap: 8px;
+  }
+  .work-t-list-item {
+    padding: 18px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    font-style: normal;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 164px;
+    padding-right: 164px;
+    padding-top: 80px;
+    padding-bottom: 169px;
+  }
+  .work-t-h-two {
+    font-size: 64px;
+  }
+  .work-t-input-email {
+    width: 390px;
+  }
+  .work-t-input-textarea {
+    width: 390px;
+  }
+}
+
+/* +++++++++ modal +++++++++ */
+.work-t-modal-container {
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.work-t-modal-close-btn {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  line-height: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}
+
+.work-t-modal-h-three {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 16px;
+}
+.work-t-modal-message {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .work-t-modal-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px;
+    width: 494px;
+    height: 246px;
+  }
+  .work-t-modal-close-btn {
+    width: 24px;
+    height: 24px;
+  }
+}
