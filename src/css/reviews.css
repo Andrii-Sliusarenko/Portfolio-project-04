@@ -113,26 +113,38 @@
     height: 52px;
     background-color: transparent;
     transition:  .350s ease-in-out;
-    stroke: #fafafa;
-    fill: #fafafa;
+    
 }
 
 .reviews-btn-previous:hover,
 .reviews-btn-next:hover {
     border-color: #ed3b44;
-   stroke: #ed3b44;
-   fill: #ed3b44;
+   }
+
+.reviews-button-icon{
+    stroke: #fafafa;
+    fill: #fafafa;
+    transition: .350s ease-in-out;
 }
+
+.reviews-btn-previous:hover .reviews-button-icon,
+.reviews-btn-next:hover .reviews-button-icon{
+    stroke: #ed3b44;
+    fill: #ed3b44;
+}
+
 
 .swiper-button-disabled {
     border: 1px solid #fafafa33;
-    stroke: #3b3b3b;
-    fill: #3b3b3b;
     opacity: 0.5;
     cursor: not-allowed;
     pointer-events: none;
     transition: .350s ease-in-out;
 }
+.swiper-button-disabled .reviews-button-icon{
+    stroke: #3b3b3b;
+    fill: #3b3b3b;}
+
 
 @media screen and (min-width: 768px) {
     .reviews-box-btn {
