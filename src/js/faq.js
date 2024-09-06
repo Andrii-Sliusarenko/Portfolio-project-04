@@ -1,25 +1,29 @@
-const faqButton = document.querySelectorAll('.svg-open-faq');
-const faqText = document.querySelectorAll('.faq-container-item-text');
-const faqQuestion = document.querySelectorAll('.faq-container-item-question');
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-faqButton.forEach((button, index) => {
+const container = document.querySelector('.accordion-container');
+
+const accordion = new Accordion('.accordion', {
+    openOnInit: [],  
+    showMultiple: false,  
+    duration: 500,  
+    easing: 'ease-in-out',
+    triggerClass: 'btn-svg-opn', 
+    panelClass: 'accordion-content',  
+    elementClass: 'accordion-item', 
+});
+
+const faqButtons = document.querySelectorAll('.btn-svg-opn');
+
+faqButtons.forEach(button => {
     button.addEventListener('click', () => {
-        faqText[index].classList.toggle('show');
+        faqButtons.forEach(btn => {
+            if (btn !== button) {
+                btn.classList.remove('rotate');
+            }
+        });
+
         button.classList.toggle('rotate');
-        faqQuestion[index].classList.toggle('is-coloring');
     });
-    button.addEventListener('mouseover', () => {
-        faqQuestion[index].classList.add('for-shadow-faq');
-    });
-    button.addEventListener('mouseout', () => {
-        faqQuestion[index].classList.remove('for-shadow-faq');
-    })
 });
 
-faqQuestion.forEach((question, index) => {
-    question.addEventListener('click', () => {
-        faqText[index].classList.toggle('show');
-        faqButton[index].classList.toggle('rotate');
-        question.classList.toggle('is-coloring');
-    })
-});
