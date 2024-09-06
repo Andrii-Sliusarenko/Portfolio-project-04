@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/Portfolio-project-04/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio-project-04/assets/vendor-CBJa2cfl.js">
     <link rel="stylesheet" crossorigin href="/Portfolio-project-04/assets/vendor-Bj7nYe4R.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio-project-04/assets/index-q3xgUptJ.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio-project-04/assets/index-Cr4we7eA.css">
   </head>
   <body>
     
@@ -212,6 +212,7 @@
     <div class="work-t-allingment">
       <img
         class="work-t-img"
+        srcset="../img/worktogether/lloyd2x.jpg 2x"
         src="../img/worktogether/lloyd1x.jpg"
         alt="Lloyd Jeferson foto"
         width="44px"
@@ -225,7 +226,6 @@
     <div class="work-t-form-allingment">
       <form class="work-t-form">
         <div class="work-t-input-email-container">
-          <!-- <label></label> -->
           <input
             class="work-t-input-email"
             type="email"
@@ -237,14 +237,13 @@
           />
         </div>
         <div class="work-t-input-textarea-container">
-          <!-- <label></label> -->
           <textarea
             class="work-t-input-textarea"
-            name=""
             id=""
+            cols="1"
+            rows="1"
             name="user-coments"
-            placeholder="commets"
-            required
+            placeholder="comments"
           ></textarea>
         </div>
       </form>
@@ -253,10 +252,16 @@
     <address>
       <ul class="work-t-contacts">
         <li class="work-t-list-item">
-          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+          <a
+            class="work-t-list-item-link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
         </li>
         <li class="work-t-list-item">
-          <a href="tel:+380 11 1111 11 11">+380 11 1111 11 11</a>
+          <a class="work-t-list-item-link" href="tel:+380 11 1111 11 11"
+            >+380 11 1111 11 11</a
+          >
         </li>
       </ul>
     </address>
@@ -266,7 +271,7 @@
 <!-- ==========modal========== -->
 <div class="container">
   <div class="work-t-modal-container">
-    <button class="work-t-modal-close-btn" type="button">
+    <button class="work-t-modal-close-btn js-close" type="button">
       <svg width="12" height="12">
         <use href="../img/svg/icons.svg#icon-x-1"></use>
       </svg>
