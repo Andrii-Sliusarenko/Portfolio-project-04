@@ -26,6 +26,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+.work-t-img {
+  border-radius: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
 
 .work-t-h-two {
   font-family: var(--font-family);
@@ -105,6 +110,13 @@
   .work-t-allingment {
     width: 500px;
   }
+  .work-t-img {
+    border-radius: 24px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    margin-bottom: 7px;
+  }
   .work-t-h-two {
     font-size: 64px;
   }
@@ -145,6 +157,23 @@
     letter-spacing: -0.02em;
     color: #fafafa;
     font-style: normal;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 164px;
+    padding-right: 164px;
+    padding-top: 80px;
+    padding-bottom: 169px;
+  }
+  .work-t-h-two {
+    font-size: 64px;
+  }
+  .work-t-input-email {
+    width: 390px;
+  }
+  .work-t-input-textarea {
+    width: 390px;
   }
 }
 
