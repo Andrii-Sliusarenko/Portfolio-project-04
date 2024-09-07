@@ -12,23 +12,35 @@
       </div>
   
       <picture>
-        <source 
-          srcset="../img/about_me/about_desk.jpg 1x, ../img/about_me/about_desk@2x.jpg 2x" 
-          media="(min-width: 1440px)" />
-        
-        <source 
-          srcset="../img/about_me/about_tab.jpg 1x, ../img/about_me/about_tab@2x.jpg 2x" 
-          media="(min-width: 768px)" />
-        
-        <source 
-          srcset="../img/about_me/about_mob.jpg 1x, ../img/about_me/about_mob@2x.jpg 2x" 
-          media="(max-width: 767px)" />
-        <img 
-        src="../img/about_me/about_desk.jpg"
-        alt="Lloyd Jefferson"
-        class="about-me-image"
-        loading="lazy" />
-      </picture> 
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+            ./img/about_me/about_mob.jpg 1x,
+            ./img/about_me/about_mob@2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1439px)"
+            srcset="
+            ./img/about_me/about_tab.jpg 1x,
+            ./img/about_me/about_tab@2x.jpg 2xx
+            "
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+            ./img/about_me/about_desk.jpg 1x,,
+            ./img/about_me/about_tab@2x.jpg 2x" 
+          
+          />
+          <img
+            src="./img/about_me/about_desk.jpg"
+            alt="Lloyd Jefferson"
+            width="680"
+            height="700"
+            class="about-me-image"
+          />
+        </picture>
     </div>
   
     <!-- ACCORDION -->
@@ -38,7 +50,7 @@
           <h3 class="about-subtitle ac-header">About me</h3>
           <button class="about-ac-btn" type="button">
             <svg class="about-btn-icon" width="18" height="18">
-              <use href="../img/svg/icons.svg#icon-arrow-down"></use>
+              <use href="/img/svg/icons.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -71,7 +83,7 @@
           <h3 class="about-subtitle ac-header">Role</h3>
           <button class="about-ac-btn" type="button">
             <svg class="about-btn-icon" width="18" height="18">
-              <use href="../img/svg/icons.svg#icon-arrow-down"></use>
+              <use href="/img/svg/icons.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -89,7 +101,7 @@
           <h3 class="about-subtitle ac-header">Education</h3>
           <button class="about-ac-btn" type="button">
             <svg class="about-btn-icon" width="18" height="18">
-              <use href="../img/svg/icons.svg#icon-arrow-down"></use>
+              <use href="/img/svg/icons.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -123,7 +135,7 @@
       </div>
       <div class="about-swiper-btn about-swiper-btn-next">
         <svg class="about-skills-btn-icon" width="28" height="28">
-          <use href="./img/svg/icons.svg#icon-arrow-narrow-right"></use>
+          <use href="/img/svg/icons.svg#icon-arrow-narrow-right"></use>
         </svg>
       </div>
     </div>
