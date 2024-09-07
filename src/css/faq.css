@@ -114,6 +114,7 @@ background-color: #2d2e30;
     fill: #fafafa;
 }
 
+
 @media screen and (min-width: 768px) {
     .section-faq-container {
         max-width: 704px;
