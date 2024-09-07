@@ -27,3 +27,4 @@ faqButtons.forEach(button => {
     });
 });
 
+
