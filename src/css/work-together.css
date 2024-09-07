@@ -209,12 +209,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    padding-left: 164px;
-    padding-right: 164px;
-    padding-top: 80px;
-    padding-bottom: 169px;
-  }
   .work-t-h-two {
     font-size: 64px;
   }
