@@ -6,7 +6,7 @@ const container = document.querySelector('.accordion-container');
 const accordion = new Accordion('.accordion', {
     openOnInit: [],  
     showMultiple: false,  
-    duration: 500,  
+    duration: 800,  
     easing: 'ease-in-out',
     triggerClass: 'btn-svg-opn', 
     panelClass: 'accordion-content',  
