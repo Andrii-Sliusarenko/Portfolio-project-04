@@ -3,8 +3,11 @@ import 'accordion-js/dist/accordion.min.css';
 
 // import Swiper JS
 import Swiper from 'swiper';
-// import Swiper styles
+
 import 'swiper/css';
+
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 import axios from 'axios';
 
