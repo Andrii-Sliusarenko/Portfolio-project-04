@@ -112,6 +112,11 @@
     background-color: #2d2e30;
 }
 
+.accordion-item.is-active .btn-svg-opn{
+    padding-top: 6px;
+    padding-left: 5.9px;
+}
+
 .rotate {
     transform: rotate(180deg);
 }
@@ -166,8 +171,8 @@
         max-width: 688px;
     }
 
-    .btn-svg-opn {
-        margin-right: 32px;
+    .mar-left-faq {
+         margin-right: 32px;
     }
 
     .margin-left {
