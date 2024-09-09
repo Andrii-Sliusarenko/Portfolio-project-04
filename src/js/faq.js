@@ -1,16 +1,15 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const container = document.querySelector('.accordion-container');
+const container = document.querySelector('.accordion');
 
-const accordion = new Accordion('.accordion', {
-    openOnInit: [],  
-    showMultiple: false,  
-    duration: 800,  
-    easing: 'ease-in-out',
-    triggerClass: 'btn-svg-opn', 
-    panelClass: 'accordion-content',  
-    elementClass: 'accordion-item', 
+ new Accordion(container, {
+  openOnInit: [],
+  showMultiple: false,
+  duration: 500,
+  elementClass: 'accordion-item',
+  panelClass: 'accordion-content',
+  triggerClass: 'btn-svg-opn',
 });
 
 const faqButtons = document.querySelectorAll('.btn-svg-opn');
@@ -26,3 +25,4 @@ faqButtons.forEach(button => {
         button.classList.toggle('rotate');
     });
 });
+

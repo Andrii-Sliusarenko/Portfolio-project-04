@@ -9,7 +9,7 @@
     transition: color 0.8s ease-in-out;
 }
 
-.faq-section:hover .FAQ{
+.faq-section:hover .FAQ {
     color: #ed3b44;
 }
 
@@ -24,8 +24,12 @@
 }
 
 .accordion-content {
-    max-width: 289px;
-    width: 100%;
+    max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        max-width: 343px;
+        width: 100%;
+        max-height: 0;
 }
 
 .accordion-answer {
@@ -43,7 +47,7 @@
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 100px;
     padding: 7px;
-    padding-left: 6.5px;
+    padding-left: 6.7px;
     padding-top: 7.5px;
     width: 34px;
     height: 34px;
@@ -51,7 +55,10 @@
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
-    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, 
+        transform 0.5s ease-in-out,
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
 }
 
 .section-faq-container {
@@ -81,15 +88,6 @@
     flex-wrap: wrap;
 }
 
-.accordion-content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    max-width: 343px;
-    width: 100%;
-}
-
 .accordion-item.is-active .accordion-content {
     max-height: 500px;
     opacity: 1;
@@ -110,23 +108,26 @@
 .btn-svg-opn:hover {
     box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
     background-color: #2d2e30;
+    border-color: #ed3b44;
 }
 
-.accordion-item.is-active .btn-svg-opn{
+.accordion-item.is-active .btn-svg-opn {
     padding-top: 6px;
-    padding-left: 5.9px;
+    padding-left: 5.5px;
 }
 
 .rotate {
     transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
 }
 
-.svg-faq{
+.svg-faq {
     fill: none;
     stroke: #fafafa;
+    transition: stroke 0.5s ease-in-out;
 }
 
-.btn-svg-opn:hover .svg-faq{
+.btn-svg-opn:hover .svg-faq {
     stroke: #ed3b44;
 }
 
@@ -172,7 +173,7 @@
     }
 
     .mar-left-faq {
-         margin-right: 32px;
+        margin-right: 32px;
     }
 
     .margin-left {
