@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   }
-  
+
 .header {
   position: absolute; 
   z-index: 9999999;
@@ -201,6 +201,7 @@ color: #ed3b44;
   cursor: pointer;
   padding: 14px 31.5px;
   text-decoration: none;
+  line-height: normal;
 }
 
 .mob-button:hover,
@@ -249,7 +250,7 @@ cursor: pointer;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  
+  line-height: normal;
 }
 
 .header-button:hover,
