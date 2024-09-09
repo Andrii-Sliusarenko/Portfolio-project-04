@@ -2,6 +2,11 @@ body {
     color: rgba(255, 0, 0, 0.5);
 }
 
+:root {
+    --hover-color: rgba(255, 0, 0, 0.5);
+}
+
+
 .section-covers{
     padding: 0;
     height: 508px;
@@ -19,16 +24,10 @@ body {
 
 .section-covers.container{
     width: 100%;
-    max-width: none;
 }
-
-.section-covers {
-    --hover-color: rgba(255, 0, 0, 0.5);
-} 
 
 .covers-wrapper{
     position: absolute;
-    width: 100%;
     right: -800px;
     left: 0;
     overflow: hidden;
@@ -40,6 +39,8 @@ body {
     margin-bottom: 30px;
     transform: rotate(17deg) ;
 }
+
+
 
 .cover-item{
     width: 282px;
@@ -64,14 +65,15 @@ body {
 
 .covers-image:hover,
 .covers-image:focus {
-    box-shadow: 
-    0 0 4px var(--hover-color),  
-    0 0 8px var(--hover-color),   
-    0 0 12px var(--hover-color), 
-    0 0 16px var(--hover-color),  
-    0 0 20px var(--hover-color); 
+    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
     transform: scale(1.1);
 }
+
+.covers-full-image {
+    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5); 
+}
+
+
 
 .covers-list:nth-child(odd) .cover-item {
     transform: translate(-20%);
@@ -88,15 +90,6 @@ body {
 .covers-wrapper.animated .covers-list:nth-child(even) .cover-item {
      animation-name: leftToRight ;
 } 
-
-.covers-full-image {
-    box-shadow: 
-    0 0 4px ,   
-    0 0 8px ,   
-    0 0 12px ,  
-    0 0 16px ,  
-    0 0 20px ;  
-}
 
 
 @keyframes rightToLeft {
@@ -134,6 +127,8 @@ body {
     line-height: 30px;
     text-align: center;
     cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
 }
   
 .covers-close-button::before {
@@ -143,9 +138,11 @@ body {
 }
 
  
-.covers-close-button:hover {
-    background:#fff; 
-    color: rgb(0, 0, 0); 
+.covers-close-button:hover,
+.covers-close-button:focus {
+    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    color: #ed3b44;
 }
 
 
