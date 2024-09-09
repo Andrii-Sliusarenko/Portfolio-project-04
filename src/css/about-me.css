@@ -85,7 +85,13 @@
   text-transform: uppercase;
   width: 284px;
   text-align: left;
+  transition: color 0.8s ease-in-out;
 }
+
+.about-ac:hover .about-subtitle {
+  color: #ed3b44;
+  }
+
 
 .about-ac-btn {
   border-radius: 50px;
@@ -93,6 +99,11 @@
   width: 36px;
   height: 36px;
   background-color: transparent;
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.about-ac-btn:hover {
+  box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .about-ac-panel {
@@ -100,6 +111,10 @@
   flex-direction: column;
   gap: 32px;
   text-align: left;
+}
+
+.about-btn-icon:hover {
+  stroke: #ed3b44;
 }
 
 .about-text {
@@ -161,9 +176,13 @@
 }
 
 /* SWIPER */
+
+
 .about-swiper-container {
-  position: relative;
+  display: flex;
+  flex-direction: row;
   width: 100%;
+
 }
 
 .about-skills.swiper {
@@ -171,18 +190,15 @@
   align-items: center;
   justify-content: flex-start;
   margin: 0;
-  background: none;
   width: 260px;
   height: 130px;
   overflow: hidden;
 }
 
 .about-skills-list {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
   width: calc(100% * 2);
   margin-left: 0;
+
 }
 
 .about-skills-item {
@@ -195,7 +211,7 @@
   align-items: center;
   justify-content: center;
   color: #fafafa;
-  margin-right: 1px;
+  margin-right: 0;
 }
 
 .about-skills-item-accent {
@@ -204,23 +220,25 @@
 }
 
 .about-swiper-btn {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 50%;
-  transform: translateY(-50%);
   background: none;
   border: none;
   width: 28px;
   height: 28px;
   cursor: pointer;
-  z-index: 10;
+  padding-left: 55px;
+  padding-top: 51px;
 }
 
 .about-skills-btn-icon {
   stroke: #3b3b3b;
   fill: transparent;
   flex-shrink: 0;
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.about-skills-btn-icon:hover {
+  stroke: #ed3b44; 
+  filter: drop-shadow(0 0 10px #ed3b44);
 }
 
 @media screen and (min-width: 768px) {
@@ -229,7 +247,8 @@
   }
 
   .about-text-section {
-    padding: 64px 64px 436px 64px;
+    width: 704px;
+    height: 700px;
   }
 
   .about-description {
@@ -277,7 +296,8 @@
   }
 
   .about-skills-item {
-    width: 230px;
+    width: 200px;
+    height: 200px ;
     font-size: 20px;
     line-height: normal;
     letter-spacing: -0.4px;
@@ -286,12 +306,14 @@
   .about-swiper-btn {
     width: 40px;
     height: 40px;
+    padding-top: 80px;
   }
 
   .about-skills-btn-icon {
     width: 40px;
     height: 40px;
   }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -339,4 +361,6 @@
   .about-skills-item {
     font-size: 20px;
   }
+
+
 }
