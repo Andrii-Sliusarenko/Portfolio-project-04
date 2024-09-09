@@ -113,7 +113,7 @@
   text-align: left;
 }
 
-.about-btn-icon:hover {
+.about-ac-btn:hover .about-btn-icon  {
   stroke: #ed3b44;
 }
 
