@@ -18,3 +18,4 @@ import './js/covers';
 import './js/reviews';
 import './js/menu';
 import './js/work-together';
+import './js/header';
