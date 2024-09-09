@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+  }
+  
 .header {
   position: absolute; 
   z-index: 9999999;
@@ -202,6 +206,8 @@ color: #ed3b44;
 .mob-button:hover,
 .mob-button:focus{
   background: #e0373f;
+  border-color: #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 
 @media screen and (min-width: 768px){
@@ -224,6 +230,11 @@ color: #fafafa;
 cursor: pointer;
 }
 
+.header-menu-click:hover,
+.header-menu-click:focus{
+  color: #ed3b44;
+}
+
 .header-button {
   display: inline-block;
   border-radius: 60px;
@@ -244,6 +255,8 @@ cursor: pointer;
 .header-button:hover,
 .header-button:focus{
   background: #e0373f;
+  border-color: #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 
 .menu-nav-list{
