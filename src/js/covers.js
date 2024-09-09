@@ -2,7 +2,6 @@ import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 
 const coversSection = document.querySelector('#covers');
-const coversBackground = document.querySelector('.covers-background');
 const coversWrapper = document.querySelector('.covers-wrapper');
 
 
@@ -10,10 +9,8 @@ const coversWrapper = document.querySelector('.covers-wrapper');
 function animateCovers(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      coversBackground.classList.add('animated');
       coversWrapper.classList.add('animated');
     } else {
-      coversBackground.classList.remove('animated');
       coversWrapper.classList.remove('animated');
     }
   });
@@ -34,15 +31,26 @@ function showImage(event) {
   }
 
   const image = event.target.currentSrc;
+
   const instance = basicLightbox.create(
-    `<img
-      src="${image}"
-      alt="${event.target.alt}"
-      class="covers-full-image"
-    />`,
+    `<div class="covers-full-image-wrapper">
+      <img
+        src="${image}"
+        alt="${event.target.alt}"
+        class="covers-full-image"
+      />
+      <button class="covers-close-button"></button>
+    </div>`,
     {
       onShow: instance => {
         window.addEventListener('keydown', closeOnEscape);
+
+        const closeButton = instance.element().querySelector('.covers-close-button');
+        if (closeButton) {
+          closeButton.addEventListener('click', () => {
+            instance.close();
+          });
+        }
       },
       onClose: instance => {
         window.removeEventListener('keydown', closeOnEscape);
