@@ -1,8 +1,18 @@
+body {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+:root {
+    --hover-color: rgba(255, 0, 0, 0.5);
+}
+
+
 .section-covers{
     padding: 0;
     height: 508px;
     overflow: hidden;
     position: relative;
+    background-size: cover;
     background-image: url(/img/covers/covers-bckgr.png);
 }
 
@@ -14,17 +24,6 @@
 
 .section-covers.container{
     width: 100%;
-    max-width: none;
-}
-
-
-.covers-background {
-    padding: 0;
-    width: 1200px;
-    height: 1200px;
-    position: absolute;
-    top: -70%;
-    left: -70%;
 }
 
 .covers-wrapper{
@@ -41,6 +40,8 @@
     transform: rotate(17deg) ;
 }
 
+
+
 .cover-item{
     width: 282px;
     height: 163px;
@@ -50,80 +51,99 @@
     justify-content: center;
     white-space: nowrap;
     flex-shrink: 0;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate
 }
 
 .covers-image {
-    /* transition: scale .25s ease-in-out,box-shadow .25s ease-in-out; */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
+    transition: 
+    transform 0.3s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
 }
 
-.covers-image:hover {
-    box-shadow: 0 0 4px var(--hover-color),0 0 8px var(--hover-color),0 0 12px var(--hover-color),0 0 16px var(--hover-color),0 0 20px var(--hover-color);
-    transform:scale(1.1);
+.covers-image:hover,
+.covers-image:focus {
+    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
 }
-
-.covers-list .cover-item:nth-child(odd) {
-    transform: translate(-20%);
-}
-
-.covers-list .cover-item:nth-child(even) {
-    transform: translate(-250%);   
-}
-
-.covers-wrapper.animated .covers-list :nth-child(odd)  {
-    animation-name: rightToLeft;
-}
-
-.covers-wrapper.animated .covers-list :nth-child(even)  {
-    animation-name: leftToRight;
-} 
 
 .covers-full-image {
-    box-shadow: 0 0 4px var(--hover-color),0 0 8px var(--hover-color),0 0 12px var(--hover-color),0 0 16px var(--hover-color),0 0 20px var(--hover-color);
+    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5); 
 }
 
-@keyframes rotation {
-    0% {
-        transform: rotate(0);
-        transform:scale(1);
-    }
 
-    50% {
-        transform: rotate(180deg);
-        transform:scale(.5);
-    }
 
-    to {
-        transform: rotate(360deg);
-        transform:scale(1);
-    }
+.covers-list:nth-child(odd) .cover-item {
+    transform: translate(-20%);
 }
+ 
+.covers-list:nth-child(even) .cover-item {
+     transform: translate(-250%); 
+}
+ 
+.covers-wrapper.animated .covers-list:nth-child(odd) .cover-item  {
+     animation-name: rightToLeft ;
+}
+ 
+.covers-wrapper.animated .covers-list:nth-child(even) .cover-item {
+     animation-name: leftToRight ;
+} 
+
 
 @keyframes rightToLeft {
     0% {
-        transform: translate(-20%)
+        transform: translate(20%);
     }
 
    to {
-        transform: translate(-250%)
+        transform: translate(-250%);
     }
 }
 
 @keyframes leftToRight {
     0% {
-        transform: translate(-20%)
+        transform: translate(-250%);
     }
 
     to {
-        transform: translate(-250%)
+        transform: translate(20%) ;
     }
 }
 
+
+.covers-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px; 
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+  
+.covers-close-button::before {
+    content: "\00D7"; 
+    display: inline-block; 
+    transform: translateY(-2px); 
+}
+
+ 
+.covers-close-button:hover,
+.covers-close-button:focus {
+    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    color: #ed3b44;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -131,16 +151,10 @@
        height: 960px;
     }
 
-    .covers-background {
-       width: 1440px;
-       height: 1440px;
-       top: -25%;
-       left: -50%;
-   }
 
    .covers-list {
-       gap: 50px;
-       margin-bottom: 70px;
+       gap: 40px;
+       margin-bottom: 50px;
    }
 
     .cover-item{
@@ -150,14 +164,13 @@
 }
  
 @media screen and (min-width: 1440px) {
-   .section-covers{
-       height: 1440px;
+    .section-covers{
+        height: 960px;
+     }
+
+   .covers-list {
+       gap: 40px;
+       margin-bottom: 60px;
    }
 
-   .covers-background {
-       width: 1800px;
-       height: 1800px;
-       top: -25%;
-       left: -25%;
-   }
 }
