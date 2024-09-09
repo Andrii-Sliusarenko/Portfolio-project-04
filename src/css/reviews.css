@@ -34,8 +34,6 @@
     border 0.35s ease-in-out, background-color 0.35s ease-in-out;
 }
 
-
-
 .reviews-list-card:hover {
   transform: scale(1);
   opacity: 1;
@@ -105,11 +103,13 @@ scroll-behavior: smooth;
   justify-content: center;
   align-items: center;
   gap: 12px;
+  margin-bottom: 16px;
 }
 
 .reviews-btn-previous,
 .reviews-btn-next {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(250, 250, 250, 0.5);
@@ -123,6 +123,7 @@ scroll-behavior: smooth;
 .reviews-btn-previous:hover,
 .reviews-btn-next:hover {
   border-color: #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 
 .reviews-button-icon {
