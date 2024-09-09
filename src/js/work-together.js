@@ -1,6 +1,6 @@
-const modal = document.querySelector('.work-t-modal-container');
+const modal = document.querySelector('.work-t-modal');
 const form = document.querySelector('.work-t-form');
-const modalWindow = document.querySelector('.work-t-modal-container');
+const modalWindow = document.querySelector('.work-t-modal');
 const inputBorderColor = document.querySelector('.work-t-input-email');
 //request//
 const formSubmit = event => {
@@ -50,11 +50,13 @@ const formSubmit = event => {
 //closeModal//
 const onCloseModalBtn = event => {
   const addCloseClassOnBtn = modalWindow.classList.add('disabled');
+
   return;
 };
 
 const onCloseModalEscape = event => {
   const addCloseClassonEsc = modalWindow.classList.add('disabled');
+  return;
 };
 
 // const onCloseModalBackdrop
