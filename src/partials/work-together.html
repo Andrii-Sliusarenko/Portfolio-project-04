@@ -1,10 +1,10 @@
-<footer class="footer section">
+<footer class="footer section" id="work-together">
   <div class="container">
     <div class="work-t-allingment">
       <img
         class="work-t-img"
-        srcset="../img/worktogether/lloyd2x.jpg 2x"
-        src="../img/worktogether/lloyd1x.jpg"
+        srcset="./img/worktogether/lloyd2x.jpg 2x"
+        src="./img/worktogether/lloyd1x.jpg"
         alt="Lloyd Jeferson foto"
         width="44px"
         height="44px"
@@ -60,19 +60,22 @@
 </footer>
 
 <!-- ==========modal========== -->
-<div class="container">
-  <div class="work-t-modal-container">
-    <button class="work-t-modal-close-btn js-close-btn" type="button">
-      <svg width="12" height="12">
-        <use href="../img/svg/icons.svg#icon-x-1"></use>
-      </svg>
-    </button>
-    <h3 class="work-t-modal-h-three">
-      Thank you for your interest in cooperation!
-    </h3>
-    <p class="work-t-modal-message">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
+
+<div class="container work-t-modal">
+  <div class="work-t-backdrop">
+    <div class="work-t-modal-content">
+      <button class="work-t-modal-close-btn js-close-btn" type="button">
+        <svg class="work-t-modal-btn-icon" width="12" height="12">
+          <use href="/img/svg/icons.svg#icon-x-1"></use>
+        </svg>
+      </button>
+      <h3 class="work-t-modal-h-three">
+        Thank you for your interest in cooperation!
+      </h3>
+      <p class="work-t-modal-message">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
   </div>
 </div>
