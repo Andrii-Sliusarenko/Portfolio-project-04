@@ -89,10 +89,17 @@
   border 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hero-social-link:hover{
+  border: #ed3b44;
+}
+
 .hero-social-link:hover {
+  transform: scale(1);
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 1);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px #ed3b44;
+  color: #ed3b44;
+
 }
 
 .hero-social-link.hero-email-link {
