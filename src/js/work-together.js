@@ -1,7 +1,9 @@
 const modal = document.querySelector('.work-t-modal');
 const form = document.querySelector('.work-t-form');
+
 const modalWindow = document.querySelector('.work-t-modal');
 const inputBorderColor = document.querySelector('.work-t-input-email');
+
 //request//
 const formSubmit = event => {
   event.preventDefault();
@@ -46,7 +48,7 @@ const formSubmit = event => {
   };
   console.log(formData);
 };
-
+form.addEventListener('submit', formSubmit);
 //closeModal//
 const onCloseModalBtn = event => {
   const addCloseClassOnBtn = modalWindow.classList.add('disabled');
@@ -54,17 +56,16 @@ const onCloseModalBtn = event => {
   return;
 };
 
-const onCloseModalEscape = event => {
-  const addCloseClassonEsc = modalWindow.classList.add('disabled');
-  return;
-};
+// CloseModalEscape
 
-// const onCloseModalBackdrop
-
-form.addEventListener('submit', formSubmit);
 modalWindow.addEventListener('click', onCloseModalBtn);
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     onCloseModalEscape();
   }
 });
+
+const onCloseModalEscape = event => {
+  const addCloseClassonEsc = modalWindow.classList.add('disabled');
+  return;
+};

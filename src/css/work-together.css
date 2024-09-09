@@ -96,8 +96,6 @@
   padding-top: 15px;
   outline: none;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .work-t-input-textarea:hover {
   opacity: 100%;
