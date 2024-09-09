@@ -3,6 +3,10 @@ margin-left: auto;
     margin-right: auto;
 }
 
+.container-title{
+    min-width: 284px;
+}
+
 .benefits-title{
         font-weight: 600;
         font-size: 16px;
@@ -16,26 +20,28 @@ margin-left: auto;
     color: #ed3b44;
 }
 
-.benefits-list{
-
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .benefits-item {
     border-radius: 20px;
         padding: 24px;
         width: 344px;
         height: 270px;
         background: #242527;
+        border: solid 1px rgba(250, 250, 250, 0.2);
+        transition: color 0.8s ease-in-out;
+}
+
+.benefits-item:hover {
+    border: solid 1px #ed3b44;
+}
+
+.benefits-item:hover .benefits-list-text{
+    color: #fafafa;
 }
 
 .benefits-menu{
     width: 344px;
     height: 1128px;
     margin-left: auto;
-    margin-right: auto;
     margin-bottom: 52px;
     display: flex;
         flex-direction: column;
@@ -78,7 +84,10 @@ margin-left: auto;
 }
 
 .benefits-btn:hover {
-    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
+transform: scale(1);
+    outline: none;
+    box-shadow: 0 0 15px #ed3b44;
+    border: #ed3b44;
         background-color: #2d2e30;
 }
 
@@ -87,6 +96,10 @@ margin-left: auto;
         font-size: 16px;
         letter-spacing: -0.02em;
         color: #fafafa;
+}
+
+.benefits-btn:hover .benefits-btn-text{
+    color: #ed3b44;
 }
 
 @media screen and (min-width: 768px) {
@@ -105,13 +118,12 @@ margin-left: auto;
 }
 
 @media screen and (min-width: 1440px){
-    .benefits.section{
-        display: flex;
-        flex-direction: row;
-    }
 
     .benefits-container {
         min-width: 696px;
+        display: flex;
+            flex-direction: row;
+            justify-content: space-between;
     }
 
         .benefits-item {
