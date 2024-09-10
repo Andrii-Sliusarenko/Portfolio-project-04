@@ -15,8 +15,8 @@ new Swiper('.projects-swiper-container', {
     onlyInViewport: true,
   },
   navigation: {
-    nextEl: '.projects-swiper-btn-next',
-    prevEl: '.projects-swiper-btn-prev',
+    nextEl: '.projects-btn-next',
+    prevEl: '.projects-btn-prev',
     disabledClass: 'projects-swiper-btn-disabled',
   },
 });

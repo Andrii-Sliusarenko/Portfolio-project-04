@@ -1,3 +1,5 @@
+.projects-container {
+}
 .projects-title {
   margin-bottom: 32px;
   font-size: 16px;
@@ -88,24 +90,25 @@
   border-radius: 60px;
   width: 52px;
   height: 52px;
-  cursor: pointer;
   background-color: transparent;
+  transition: 0.35s ease-in-out;
 }
 
 .projects-btn-prev:hover,
 .projects-btn-next:hover {
-  box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
-  background-color: #2d2e30;
+  border-color: #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 
 .projects-swiper-btn-prev,
 .projects-swiper-btn-next {
   stroke: #fafafa;
   fill: none;
+  transition: 0.35s ease-in-out;
 }
 
-.projects-swiper-btn-prev:hover,
-.projects-swiper-btn-next:hover {
+.projects-btn-prev:hover .projects-swiper-btn-prev,
+.projects-btn-next:hover .projects-swiper-btn-next {
   stroke: #ed3b44;
 }
 
