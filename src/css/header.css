@@ -250,6 +250,44 @@ html {
     cursor: pointer;
     text-decoration: none;
     line-height: normal;
+  }
+
+  .header-button:hover,
+  .header-button:focus {
+    background: #e0373f;
+    border-color: #ed3b44;
+    box-shadow: 0 0 15px #ed3b44;
+  }
+
+  .menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .menu-click.open {
+    display: block;
+  }
+
+  .menu-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  
+  .header-link-mobile {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background: #ed3b44;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: normal;
     transition: .35s ease-in-out;
   }
 
