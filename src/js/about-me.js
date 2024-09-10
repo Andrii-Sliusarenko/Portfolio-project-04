@@ -47,8 +47,8 @@ new Swiper('.about-skills', {
       slidesPerView: 3,
     },
     1440: {
-      slidesPerView: 5,
-      loopedSlides: 5,
+      slidesPerView: 6,
+      loopedSlides: 6,
     },
   },
 });
