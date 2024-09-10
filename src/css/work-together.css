@@ -185,7 +185,8 @@
 
 @media screen and (min-width: 768px) {
   .container-two {
-    margin-bottom: 89px;
+    padding-bottom: 10px;
+    margin-bottom: 79px;
   }
 
   .work-t-allingment {
@@ -248,7 +249,7 @@
   .container-two {
     margin-left: 164px;
     margin-right: 164px;
-    margin-bottom: 89px;
+    margin-bottom: 79px;
   }
   .work-t-h-two {
     font-size: 64px;
