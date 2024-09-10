@@ -113,7 +113,7 @@
   text-align: left;
 }
 
-.about-ac-btn:hover .about-btn-icon  {
+.about-ac-btn:hover .about-btn-icon {
   stroke: #ed3b44;
 }
 
@@ -354,7 +354,7 @@
   }
 
   .about-skills.swiper {
-    width: 1100px;
+    width: 1200px;
     padding: 0;
   }
 
