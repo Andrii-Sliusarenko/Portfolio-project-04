@@ -277,7 +277,6 @@ html {
     gap: 18px;
   }
 
-  
   .header-link-mobile {
     font-weight: 500;
     font-size: 16px;
@@ -308,7 +307,6 @@ html {
   .menu-click.open {
     display: block;
   }
-
  
   .menu-flex {
     display: flex;
