@@ -7,6 +7,7 @@ html {
   z-index: 9999999;
   left: 0;
   width: 100%;
+  padding: 32px 0;
 }
 
 .header-logo {
@@ -170,6 +171,7 @@ html {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
+  transition: 0.35s ease-in-out;
 }
 
 .header-link-mobile:hover,
@@ -197,6 +199,7 @@ html {
   padding: 14px 31.5px;
   text-decoration: none;
   line-height: normal;
+  transition: 0.35s ease-in-out;
 }
 
 .mob-button:hover,
@@ -205,7 +208,6 @@ html {
   border-color: #ed3b44;
   box-shadow: 0 0 15px #ed3b44;
 }
-
 
 @media screen and (min-width: 768px) {
   .header-btn-burger {
@@ -225,6 +227,7 @@ html {
     text-decoration-skip-ink: none;
     color: #fafafa;
     cursor: pointer;
+    transition: 0.35s ease-in-out;
   }
 
   .header-menu-click:hover,
@@ -247,6 +250,7 @@ html {
     cursor: pointer;
     text-decoration: none;
     line-height: normal;
+    transition: 0.35s ease-in-out;
   }
 
   .header-button:hover,
@@ -267,6 +271,7 @@ html {
     display: block;
   }
 
+
   .menu-flex {
     display: flex;
     flex-direction: column;
@@ -274,7 +279,6 @@ html {
     gap: 18px;
   }
 
-  
   .header-link-mobile {
     font-weight: 500;
     font-size: 16px;
