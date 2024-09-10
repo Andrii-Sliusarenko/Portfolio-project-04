@@ -7,6 +7,7 @@ html {
   z-index: 9999999;
   left: 0;
   width: 100%;
+  padding: 32px 0;
 }
 
 .header-logo {
@@ -170,6 +171,7 @@ html {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
+  transition: .35s ease-in-out;
 }
 
 .header-link-mobile:hover,
@@ -197,8 +199,7 @@ html {
   padding: 14px 31.5px;
   text-decoration: none;
   line-height: normal;
-  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: .35s ease-in-out;
 }
 
 .mob-button:hover,
@@ -226,6 +227,7 @@ html {
     text-decoration-skip-ink: none;
     color: #fafafa;
     cursor: pointer;
+    transition: .35s ease-in-out;
   }
 
   .header-menu-click:hover,
@@ -248,8 +250,7 @@ html {
     cursor: pointer;
     text-decoration: none;
     line-height: normal;
-    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: .35s ease-in-out;
   }
 
   .header-button:hover,
@@ -270,6 +271,7 @@ html {
     display: block;
   }
 
+ 
   .menu-flex {
     display: flex;
     flex-direction: column;
