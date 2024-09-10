@@ -122,6 +122,9 @@ html {
   padding-top: 302px;
   padding-bottom: 398px;
 }
+.menu-nav-list {
+  padding-bottom: 5px;
+}
 
 .menu-close-btn {
   position: absolute;
