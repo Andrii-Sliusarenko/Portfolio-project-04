@@ -7,6 +7,7 @@ html {
   z-index: 9999999;
   left: 0;
   width: 100%;
+  padding: 32px 0;
 }
 
 .header-logo {
@@ -15,7 +16,6 @@ html {
   align-items: flex-start;
   gap: 8px;
   justify-content: space-between;
-
 }
 
 .header-container {
@@ -23,12 +23,11 @@ html {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-
 }
 
 .header-logo-jeff,
 .header-icon-burger {
-  fill: #fafafa
+  fill: #fafafa;
 }
 
 .header-btn-burger {
@@ -48,17 +47,17 @@ html {
   display: none;
 }
 
-
 /*=============MOBILE MENU==================*/
 .mobile-menu-container {
   position: relative;
-  background: linear-gradient(270deg,
-      #1c1d20 49.68%,
-      #69292d 67.73%,
-      #ed3b44 100%);
+  background: linear-gradient(
+    270deg,
+    #1c1d20 49.68%,
+    #69292d 67.73%,
+    #ed3b44 100%
+  );
 
   z-index: 0;
-
 }
 
 .menu-background {
@@ -70,26 +69,29 @@ html {
   overflow: hidden;
   display: flex;
   z-index: -1;
-  mask-image: linear-gradient(to right,
-      rgba(0, 0, 0, 1) 90%,
-      rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .menu-mobile-background {
   margin-left: -5px;
   width: 57px;
   backdrop-filter: blur(100px);
-  background: linear-gradient(90deg,
-      rgba(20, 20, 20, 0.2) 0%,
-      rgba(0, 0, 0, 0.1) 16.66%,
-      rgba(15, 15, 15, 0.2) 16.67%,
-      rgba(0, 0, 0, 0.2) 35%,
-      rgba(100, 100, 100, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.2) 0%,
+    rgba(0, 0, 0, 0.1) 16.66%,
+    rgba(15, 15, 15, 0.2) 16.67%,
+    rgba(0, 0, 0, 0.2) 35%,
+    rgba(100, 100, 100, 0) 100%
+  );
   flex-shrink: 0;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
 
 .menu-mobile-background.menu-in-view {
   opacity: 1;
@@ -117,10 +119,12 @@ html {
   transform: translateY(0%);
 }
 
-
 .mobile-menu-container {
   padding-top: 302px;
   padding-bottom: 398px;
+}
+.menu-nav-list {
+  padding-bottom: 5px;
 }
 
 .menu-close-btn {
@@ -150,7 +154,6 @@ html {
   max-width: 320px;
 }
 
-
 .menu-link-btn {
   display: flex;
   flex-direction: column;
@@ -160,7 +163,6 @@ html {
   gap: 289px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .header-link-mobile {
@@ -170,6 +172,7 @@ html {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
+  transition: 0.35s ease-in-out;
 }
 
 .header-link-mobile:hover,
@@ -197,8 +200,7 @@ html {
   padding: 14px 31.5px;
   text-decoration: none;
   line-height: normal;
-  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s ease-in-out;
 }
 
 .mob-button:hover,
@@ -226,6 +228,7 @@ html {
     text-decoration-skip-ink: none;
     color: #fafafa;
     cursor: pointer;
+    transition: 0.35s ease-in-out;
   }
 
   .header-menu-click:hover,
@@ -248,8 +251,7 @@ html {
     cursor: pointer;
     text-decoration: none;
     line-height: normal;
-    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.35s ease-in-out;
   }
 
   .header-button:hover,
@@ -289,5 +291,4 @@ html {
   .header-link-mobile:focus {
     text-decoration: none;
   }
-
 }
