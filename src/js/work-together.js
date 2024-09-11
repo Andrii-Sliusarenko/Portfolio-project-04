@@ -50,10 +50,12 @@ const formSubmit = event => {
   console.log(formData);
 };
 form.addEventListener('submit', formSubmit);
+
 //closeModal//
 const onCloseModalBtn = event => {
-  const addCloseClassOnBtn = modalWindow.classList.add('disabled');
-
+  // const addCloseClassOnBtn = modalWindow.classList.add('disabled');
+  modal.classList.remove('js-is-open');
+  body.classList.remove('no-scroll');
   return;
 };
 
@@ -67,6 +69,8 @@ document.addEventListener('keydown', event => {
 });
 
 const onCloseModalEscape = event => {
-  const addCloseClassonEsc = modalWindow.classList.add('disabled');
+  // const addCloseClassonEsc = modalWindow.classList.add('disabled');
+  modal.classList.remove('js-is-open');
+  body.classList.remove('no-scroll');
   return;
 };
