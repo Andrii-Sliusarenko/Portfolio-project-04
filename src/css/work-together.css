@@ -347,7 +347,6 @@
 }
 .js-is-open {
   display: block;
-  overflow: hidden;
 }
 .disabled {
   display: none;
