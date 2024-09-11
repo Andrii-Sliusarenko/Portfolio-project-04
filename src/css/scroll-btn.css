@@ -39,19 +39,18 @@
   transform: scale(1.2);
 }
 
-
 @media screen and (min-width: 768px) {
-    .arrow-up {
-    width: 68px;
-        height: 68px;
-        bottom: 115px ;
-        right: 16px;
-    }
-.arrow-up-two {
-    bottom: 25px; 
-}
-.icon-scroll-button{
-width: 38px;
+  .arrow-up {
+    width: 54px;
+    height: 54px;
+    bottom: 115px;
+    right: 16px;
+  }
+  .arrow-up-two {
+    bottom: 25px;
+  }
+  .icon-scroll-button {
+    width: 38px;
     height: 38px;
-}
+  }
 }
