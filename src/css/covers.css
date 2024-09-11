@@ -65,13 +65,16 @@ body {
 
 .covers-image:hover,
 .covers-image:focus {
-    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px #ed3b44;
+    border: 1px solid #ed3b44;
     transform: scale(1.1);
 }
 
 .covers-full-image {
-    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 20px #ed3b44;
+    border: 1px solid #ed3b44;
 }
+
 
 
 
@@ -119,29 +122,29 @@ body {
     right: 10px;
     width: 30px;
     height: 30px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: #3b3b3b;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     font-size: 24px; 
     line-height: 30px;
     text-align: center;
     cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-
+    transition: all 0.45s ease-in-out;
+    border: 1px solid transparent;
 }
   
 .covers-close-button::before {
     content: "\00D7"; 
     display: inline-block; 
-    transform: translateY(-2px); 
+    transform: translateY(-3px); 
 }
 
  
 .covers-close-button:hover,
 .covers-close-button:focus {
-    box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
-    transform: scale(1.1);
+    box-shadow: 0 0 15px #ed3b44;
+    border: 1px solid #ed3b44;;
     color: #ed3b44;
 }
 
