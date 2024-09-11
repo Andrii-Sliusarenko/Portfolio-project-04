@@ -9,6 +9,11 @@
     transition: color 0.8s ease-in-out;
 }
 
+.faq-section{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .faq-section:hover .FAQ {
     color: #ed3b44;
 }
@@ -132,6 +137,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    .faq-section{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     .section-faq-container {
         max-width: 704px;
         width: 100%;
@@ -158,6 +168,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .faq-section{
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
     .border-right {
         border-right: rgba(250, 250, 250, 0.2) 1px solid;
     }

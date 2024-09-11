@@ -44,7 +44,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-
 .background-effect.in-view {
   opacity: 1;
 }
@@ -62,7 +61,6 @@
   color: #fafafa;
 }
 
-
 .hero-list {
   display: flex;
   align-items: flex-start;
@@ -71,6 +69,7 @@
   justify-items: center;
   flex-wrap: wrap;
   gap: 4px;
+  padding-bottom: 10px;
 }
 
 .hero-social-link {
@@ -86,10 +85,10 @@
   background-color: transparent;
   border-radius: 60px;
   transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-social-link:hover{
+.hero-social-link:hover {
   border: #ed3b44;
 }
 
@@ -99,7 +98,6 @@
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 15px #ed3b44;
   color: #ed3b44;
-
 }
 
 .hero-social-link.hero-email-link {
@@ -133,7 +131,7 @@
     font-size: 16px;
   }
 
-  .hero-social-link.hero-email-link{
+  .hero-social-link.hero-email-link {
     width: 223px;
   }
 }
