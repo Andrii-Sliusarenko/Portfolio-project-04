@@ -6,7 +6,6 @@ new Swiper('.projects-swiper-container', {
   loop: false,
   slidesPerView: 1,
   spaceBetween: 10,
-  mousewheel: true,
   effect: 'cards',
   grabCursor: true,
   keyboard: {
