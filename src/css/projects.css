@@ -1,5 +1,3 @@
-.projects-container {
-}
 .projects-title {
   margin-bottom: 32px;
   font-size: 16px;
@@ -77,6 +75,7 @@
 .projects-swiper-btn-disabled {
   opacity: 0.2;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 .projects-btn-prev,
