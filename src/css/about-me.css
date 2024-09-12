@@ -39,14 +39,29 @@
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
+  transition: all 1.4s ease-in-out;
 }
 
 .about-me-accent {
   color: #ed3b44;
+  transition: all 1.4s ease-in-out;
 }
 
 .about-me-websites {
   color: rgba(250, 250, 250, 0.4);
+  transition: all 1.4s ease-in-out;
+}
+
+.about-text-section:hover .about-description {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-text-section:hover .about-description .about-me-accent {
+  color: #fafafa;
+}
+
+.about-text-section:hover .about-description .about-me-websites {
+  color: #ed3b44;
 }
 
 .about-me-image {
@@ -90,8 +105,7 @@
 
 .about-ac:hover .about-subtitle {
   color: #ed3b44;
-  }
-
+}
 
 .about-ac-btn {
   border-radius: 50px;
@@ -99,11 +113,12 @@
   width: 36px;
   height: 36px;
   background-color: transparent;
-  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .about-ac-btn:hover {
-  box-shadow: 0 0 10px #ed3b44, 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px #ed3b44;
+  border: 1px solid #ed3b44;
 }
 
 .about-ac-panel {
@@ -173,16 +188,16 @@
   stroke: #fafafa;
   fill: transparent;
   transform: translateY(10%);
+  transition: all 0.3s ease-in-out;
 }
 
 /* SWIPER */
 
-
 .about-swiper-container {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .about-skills.swiper {
@@ -193,12 +208,6 @@
   width: 260px;
   height: 130px;
   overflow: hidden;
-}
-
-.about-skills-list {
-  width: calc(100% * 2);
-  margin-left: 0;
-
 }
 
 .about-skills-item {
@@ -220,27 +229,37 @@
 }
 
 .about-swiper-btn {
-  background: none;
-  border: none;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  padding-left: 55px;
-  padding-top: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.35s ease-in-out;
 }
 
 .about-skills-btn-icon {
   stroke: #3b3b3b;
-  fill: transparent;
+  fill: none;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
-  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.about-skills-btn-icon:hover {
-  stroke: #ed3b44; 
+.about-swiper-btn:hover 
+.about-skills-btn-icon {
+  stroke: #ed3b44;
+  stroke-width: 2px;
   filter: drop-shadow(0 0 10px #ed3b44);
 }
 
+
+/* TABLET */
 @media screen and (min-width: 768px) {
   .about-description-section {
     margin-bottom: 64px;
@@ -297,7 +316,7 @@
 
   .about-skills-item {
     width: 200px;
-    height: 200px ;
+    height: 100%;
     font-size: 20px;
     line-height: normal;
     letter-spacing: -0.4px;
@@ -306,7 +325,6 @@
   .about-swiper-btn {
     width: 40px;
     height: 40px;
-    padding-top: 80px;
   }
 
   .about-skills-btn-icon {
@@ -314,53 +332,83 @@
     height: 40px;
   }
 
+
+  /* DESKTOP */
+  @media screen and (min-width: 1440px) {
+    .about-description-section {
+      flex-direction: row;
+      margin-bottom: 96px;
+    }
+
+    .about-description {
+      width: 552px;
+    }
+
+    .about-me-image {
+      width: 680px;
+    }
+
+    .about-accordion-container {
+      margin-bottom: 96px;
+    }
+
+    .about-ac-panel {
+      padding-right: 68px;
+      padding-left: 696px;
+    }
+
+    .about-role-list,
+    .about-education-list {
+      justify-content: flex-start;
+    }
+
+    .about-education-list > li:first-child {
+      width: 369px;
+    }
+
+    .about-education-wrapper {
+      padding-top: 32px;
+      margin-bottom: 96px;
+    }
+
+    .about-skills.swiper {
+      width: 1200px;
+    }
+
+     .about-swiper-container {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       width: 100%;
+     }
+
+.about-swiper-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.35s ease-in-out;
 }
 
-@media screen and (min-width: 1440px) {
-  .about-description-section {
-    flex-direction: row;
-    margin-bottom: 96px;
+.about-skills-btn-icon {
+  stroke: #3b3b3b;
+  fill: none;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-swiper-btn:hover .about-skills-btn-icon {
+  stroke: #ed3b44;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 10px #ed3b44);
+}
   }
-
-  .about-description {
-    width: 552px;
-  }
-
-  .about-me-image {
-    width: 680px;
-  }
-
-  .about-accordion-container {
-    margin-bottom: 96px;
-  }
-
-  .about-ac-panel {
-    padding-right: 68px;
-    padding-left: 696px;
-  }
-
-  .about-role-list,
-  .about-education-list {
-    justify-content: flex-start;
-  }
-
-  .about-education-list>li:first-child {
-    width: 369px;
-  }
-
-  .about-education-wrapper {
-    padding-top: 32px;
-    margin-bottom: 96px;
-  }
-
-  .about-skills.swiper {
-    width: 1200px;
-    padding: 0;
-  }
-
-  .about-skills-item {
-    font-size: 20px;
-  }
-
-
 }

@@ -1,6 +1,6 @@
 const modal = document.querySelector('.work-t-modal');
 const form = document.querySelector('.work-t-form');
-
+const body = document.querySelector('.scroll');
 const modalWindow = document.querySelector('.work-t-modal');
 const inputBorderColor = document.querySelector('.work-t-input-email');
 
@@ -33,6 +33,7 @@ const formSubmit = event => {
   })
     .then(user => {
       modal.classList.add('js-is-open');
+      body.classList.add('no-scroll');
       form.reset();
       console.log(user);
     })
@@ -49,10 +50,12 @@ const formSubmit = event => {
   console.log(formData);
 };
 form.addEventListener('submit', formSubmit);
+
 //closeModal//
 const onCloseModalBtn = event => {
-  const addCloseClassOnBtn = modalWindow.classList.add('disabled');
-
+  // const addCloseClassOnBtn = modalWindow.classList.add('disabled');
+  modal.classList.remove('js-is-open');
+  body.classList.remove('no-scroll');
   return;
 };
 
@@ -66,6 +69,8 @@ document.addEventListener('keydown', event => {
 });
 
 const onCloseModalEscape = event => {
-  const addCloseClassonEsc = modalWindow.classList.add('disabled');
+  // const addCloseClassonEsc = modalWindow.classList.add('disabled');
+  modal.classList.remove('js-is-open');
+  body.classList.remove('no-scroll');
   return;
 };
