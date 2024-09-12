@@ -28,9 +28,9 @@ new Swiper('.about-skills', {
     onlyInViewport: true,
     pageUpDown: true,
   },
-  mousewheel: {
-    invert: true,
-  },
+  // mousewheel: {
+  //   invert: true,
+  // },
   grabCursor: true,
   touchEventsTarget: 'wrapper',
   slideClass: 'about-skills-item',

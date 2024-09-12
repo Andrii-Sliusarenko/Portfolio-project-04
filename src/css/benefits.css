@@ -15,7 +15,7 @@
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
   text-align: left;
-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 .benefits:hover .benefits-title {
   color: #ed3b44;
@@ -33,14 +33,14 @@ transition: 0.8s ease-in-out;
 
 .benefits-item:hover {
   border: solid 1px #ed3b44;
-box-shadow: 0 0 15px #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 
 .benefits-item:hover .benefits-list-text {
   color: #fafafa;
 }
 .benefits-list {
-    margin-top: 32px;
+  margin-top: 32px;
   max-height: 100%;
   padding-bottom: 30px;
 }
@@ -54,16 +54,17 @@ box-shadow: 0 0 15px #ed3b44;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  padding-top: 10px;
 }
 
 .benefits-item:hover .benefits-item-icon {
-    scale: 1.2;
+  scale: 1.2;
 }
 
 .benefits-item-icon {
   margin-left: 0;
   margin-top: 0;
-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 .benefits-list-item {
@@ -82,7 +83,7 @@ transition: all 0.45s ease-in-out;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   margin-top: 8px;
-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 .benefits-btn {
@@ -99,7 +100,7 @@ transition: all 0.45s ease-in-out;
 .benefits-btn:hover {
   box-shadow: 0 0 15px #ed3b44;
   border: 1px solid #ed3b44;
-  background-color: #2d2e30;
+  background-color: transparent;
 }
 
 .benefits-btn-text {
@@ -107,7 +108,7 @@ transition: all 0.45s ease-in-out;
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .benefits-btn:hover .benefits-btn-text {
@@ -144,6 +145,6 @@ transition: all 0.5s ease-in-out;
     height: 556px;
   }
   .benefits-list {
-      margin-top: 0px;
-}
+    margin-top: 0px;
+  }
 }
