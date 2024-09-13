@@ -35,19 +35,16 @@ const formSubmit = event => {
       modal.classList.add('js-is-open');
       body.classList.add('no-scroll');
       form.reset();
-      console.log(user);
     })
     .catch(error => {
       inputBorderColor.classList.add('js-input-email');
       alert('Invalid Email');
-      console.log(error);
     });
 
   const formData = {
     email: form.elements.user_email.value.trim(),
     comments: form.elements.user_comments.value.trim(),
   };
-  console.log(formData);
 };
 form.addEventListener('submit', formSubmit);
 
