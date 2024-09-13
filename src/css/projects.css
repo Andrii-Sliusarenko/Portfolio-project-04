@@ -141,6 +141,11 @@
     padding: 18px 50px;
   }
 
+  .projects-swiper-btn-prev,
+  .projects-swiper-btn-next {
+    width: 32px;
+    height: 32px;
+  }
   .projects-btn-prev,
   .projects-btn-next {
     padding: 18px;
